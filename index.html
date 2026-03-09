@@ -1,10 +1,12 @@
   <!DOCTYPE html>
   <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Acedemico</title>
+     <link rel="icon" type="image/x-icon" href="assets/logoFacu.png">
 
        </head> 
         <body>
@@ -14,6 +16,7 @@
 
     <header class="hero-section">
         <div class="intro-text">
+            <img src="assets/logoFacu.png" alt="Logo Uniasselvi" class="logo-topo">
             <h1> TEXTO</h1>
             <p>TEXTO</p>
         </div>
@@ -23,9 +26,17 @@
         </nav>
     </header>
 
-    <main class="timeline-container">
-        <h2>lINHA DO TEMPO INTERATICA</h2>
-        <div id="timeline"> </div>
+    <main class="linha-do-tempo">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> 1º </div>
+                <div class="swiper-slide"> 2º</div>
+                <div class="swiper-slide"> 3º </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </main>
 
     <section class="extra-content">
@@ -34,12 +45,32 @@
     </section>
 
     <footer>
+        <p>texto</p>
         <p>&copy; footer</p>
     </footer>
 </div>
 </body>
     </html>
     
-  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+       
+        slidesPerView: 1,
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        }
+      });
+    </script>
     
 

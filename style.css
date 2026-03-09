@@ -1,0 +1,56 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+    header {
+        background-color: #FFD400; 
+        color: white;              
+        padding: 20px;
+        text-align: center;
+    }
+    .logo-topo {
+        width: 150px;
+        border: 2px solid #FFD400; 
+    }
+    main {
+        background-color: #f9f9f9;
+        color: white;
+        min-height: 400px;         
+        padding: 40px;
+        flex: 1;
+    }
+    footer {
+        text-align: center;
+        justify-content: space-between; 
+        align-items: center;            
+        padding: 20px;
+        background-color: #000000;
+        color: white;
+    }
+
+    .linha-do-tempo {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+/* cards da linha do tempo */
+.swiper-slide {
+    background-color: #004587; /* Azul ?? decidir  */
+    color: white;
+    height: 250px; /* Altura do card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+}
+
+/* setas e bolinhas amarelas */
+:root {
+    --swiper-navigation-color: #FFD400;
+    --swiper-pagination-color: #FFD400;
+}
