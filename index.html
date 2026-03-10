@@ -26,12 +26,98 @@
         </nav>
     </header>
 
-    <main class="linha-do-tempo">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"> 1º </div>
-                <div class="swiper-slide"> 2º</div>
-                <div class="swiper-slide"> 3º </div>
+    <section class="busca-emergencia">
+    <div class="container-busca">
+        <h2>Localize a Unidade de Proteção Mais Próxima</h2>
+        <p>Encontre delegacias especializadas (DPCAMI) e órgãos de proteção em tempo real.</p>
+        
+        <div class="search-wrapper">
+            <input type="text" id="cidadeBusca" placeholder="Ex: Saguaçu, Joinville...">
+            <button onclick="buscarNoMapa()" class="btn-localizar">🔍 Localizar Agora</button>
+        </div>
+        
+        <small>Utilizamos a base oficial do Google Maps para sua segurança.</small>
+
+        <div id="mapaContainer" style="display:none; margin-top: 30px; border-radius: 15px; overflow: hidden; border: 3px solid #007bff; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <iframe 
+                id="mapaIframe"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<section><div class="topolinhatempo">
+        <p><strong>1927</strong> Linha histórica dos direitos da criança no Brasil <strong>2026</strong></p>
+    </div>
+  </section>
+
+        <main class="linha-do-tempo">
+    
+          <div class="swiper mySwiper">
+            
+              <div class="swiper-wrapper">
+              
+                    <div class="swiper-slide">  
+                      <div class="swiper-slide">  
+      <a href="https://mapa.an.gov.br/index.php/dicionario-primeira-republica/1165-legislacao-sobre-menores-na-primeira-republica" 
+        target="_blank" 
+        class="btn-acesso" 
+        style="background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('assets/1927.jpg');">
+        
+        1927 Código de Menores. O início da legislação infantil no Brasil.
+      </a>
+  </div>
+                  </div>
+
+                <div class="swiper-slide">  
+                  <a href="https://www.sinesp.org.br/quem-somos/legis/370-declaracao-universal-dos-direitos-da-crianca/1919-declaracao-dos-direitos-da-crianca-1959#:~:text=A%20criança%20gozará%20proteção%20social,condições%20de%20liberdade%20e%20dignidade." target="_blank" class="btn-acesso">1959	Declaração da ONU	Direitos das crianças reconhecidos mundialmente.</a>
+
+                </div>
+
+                <div class="swiper-slide"> 
+                  <a href="https://prioridadeabsoluta.org.br/entenda-a-prioridade/" target="_blank" class="btn-acesso">1988	Constituição Federal	Criança como "Prioridade Absoluta" do Estado.</a>
+
+                </div>
+
+                <div class="swiper-slide">  
+                  <a href="https://www.childhood.org.br/acoes-e-iniciativas/conselho-tutelar/" target="_blank" class="btn-acesso">1990	Nascimento do ECA	Criação da Lei 8.069 e dos Conselhos Tutelares.</a>
+
+                </div>
+
+                <div class="swiper-slide">  
+                  <a href="https://mppr.mp.br/Pagina/Eleicoes-Unificadas-para-os-Conselhos-Tutelares" target="_blank" class="btn-acesso">2012	Eleição Unificada	Fortalecimento da democracia nos Conselhos.</a>
+
+                </div>
+
+                <div class="swiper-slide">  
+                  <a href="https://www.jusbrasil.com.br/artigos/lei-menino-bernardo/925423099" target="_blank" class="btn-acesso">2014	Lei Menino Bernardo	Proteção contra castigos físicos e humilhantes.</a>
+
+                </div>
+
+                <div class="swiper-slide">  
+                  <a href="https://andi.org.br/2015/01/marco-legal-da-primeira-infancia-e-um-passo-importante-para-o-avanco-nas-politicas-publicas-de-protecao-a-crianca/" target="_blank" class="btn-acesso">2015	Primeira Infância	Foco nos direitos dos primeiros anos de vida.</a>
+
+                </div>
+
+                <div class="swiper-slide">  
+                  <a href="https://revistaft.com.br/o-enfrentamento-da-violencia-contra-a-crianca-e-o-adolescente-apos-a-lei-n-14-344-2022-lei-henry-borel/" target="_blank" class="btn-acesso">2022	Lei Henry Borel	Rigor no combate à violência doméstica infantil.</a>
+
+                </div>
+
+                <div class="swiper-slide"> 2024: Renovação e Saúde Mental (Novos protocolos de atendimento).
+                  <a href="https://www.camara.leg.br/noticias/1240084-comissao-aprova-protocolo-de-atendimento-para-tentativas-de-suicidio-de-criancas-e-adolescentes/" target="_blank" class="btn-acesso">2024: Renovação e Saúde Mental (Novos protocolos de atendimento).</a>
+
+                   </div>
+
+                <div class="swiper-slide">  
+                  <a href="https://new.safernet.org.br/content/dia-da-internet-segura-2026-edicao-brasileira-discute-eca-digital-verificacao-etaria-online" target="_blank" class="btn-acesso">2026: Direitos Humanos na Era Digital (O desafio da segurança online).</a>
+
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -39,16 +125,54 @@
         </div>
     </main>
 
-    <section class="extra-content">
-        <h2>espaço para algo</h2>
-        <div class="placeholder">texto</div>
-    </section>
+    <section class="canais-acesso">
+    <div class="container-grid">
+        
+        <div class="card-acesso cidadao">
+            <div class="card-icon">📢</div>
+            <h3>Sou Cidadão / Vizinho</h3>
+            <p>Aprenda a identificar sinais de violação de direitos e saiba como realizar uma denúncia anônima com segurança.</p>
+            <a href="https://www.gov.br/mdh/pt-br/ondh/" target="_blank" class="btn-acesso">Denunciar (Disque 100)</a>
+        </div>
+
+        <div class="card-acesso pais">
+            <div class="card-icon">👨‍👩‍👧</div>
+            <h3>Sou Pai / Responsável</h3>
+            <p>Entenda o que diz o ECA sobre a Lei Menino Bernardo e como educar com base no respeito e no cuidado integral.</p>
+            <a href="https://naobataeduque.org.br" target="_blank" class="btn-acesso"> Conheça a Org: <br> Não bata, eduque</a>
+        </div>
+
+        <div class="card-acesso profissional">
+            <div class="card-icon">⚖️</div>
+            <h3>Sou Profissional</h3>
+            <p>Acesse os textos técnicos do CONANDA .</p>
+            <a href="https://www.gov.br/mdh/pt-br/acesso-a-informacao/participacao-social/conselho-nacional-dos-direitos-da-crianca-e-do-adolescente-conanda/resolucoes/resolucoes-1-a-99.pdf" target="_blank" class="btn-acesso">Legislação Técnica</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="compromisso-social">
+    <div class="texto-container">
+        <h2>A Tecnologia a Serviço da Proteção</h2>
+        <p>
+            Este portal nasce da convicção de que a informação é a ferramenta mais poderosa para a garantia dos direitos fundamentais. 
+            Mais do que um repositório de dados, buscamos fortalecer a rede de proteção que sustenta o futuro de nossas crianças e adolescentes. 
+            Em conformidade com o <strong>Estatuto da Criança e do Adolescente (ECA)</strong>, acreditamos que a responsabilidade é compartilhada: 
+            família, sociedade e estado unidos por uma infância livre de violência e plena em direitos.
+        </p>
+    </div>
+</section>
 
     <footer>
         <p>texto</p>
         <p>&copy; footer</p>
     </footer>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="server.js"></script>
 </body>
     </html>
     

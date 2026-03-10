@@ -36,9 +36,9 @@
 
 /* cards da linha do tempo */
 .swiper-slide {
-    background-color: #004587; /* Azul ?? decidir  */
+    background-color: #68a1d7; /* Azul ?? decidir  */
     color: white;
-    height: 250px; /* Altura do card */
+    height: 250px; /* altura do card */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,4 +53,308 @@
 :root {
     --swiper-navigation-color: #FFD400;
     --swiper-pagination-color: #FFD400;
+}
+
+/* Slide ( caixa que segura tudo) */
+.swiper-slide {
+    background-color: #68a1d7; 
+    height: 250px; 
+    border-radius: 15px;
+    overflow: hidden; /* imagem não vazar das bordas */
+    display: flex;
+}
+
+/*  para img aparecer */
+.swiper-slide a {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 100%; 
+    padding: 20px;
+    text-decoration: none;
+    color: #333; 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+  
+    background-size: cover;
+    background-position: center;
+    
+    /*  (esbranquiçado) */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                      url('sua-foto-padrao.jpg');
+    
+    transition: 0.3s ease;
+}
+
+/*  efeito mouse */
+.swiper-slide a:hover {
+    /* Deixa a imagem nitida? TESTE */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+    transform: scale(1.02);
+}
+/* para imagem suave no card da linhadotempo */
+.swiper-slide .btn-acesso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box; /* para n bugar o card */
+    
+    /* paraimagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+/*denuncia e orientacao */
+.canais-acesso {
+    padding: 60px 20px;
+    background-color: #1a1a1a; 
+}
+
+.container-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-acesso {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card-acesso:hover {
+    transform: translateY(-10px); /* efeito card*/
+    border-color: #007bff; 
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card-acesso h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card-acesso p {
+    color: #bbb;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-acesso {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #c3dcf6;
+    border: 2px solid #c1d7ef;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-acesso:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+/* texto abaixo dos cards */ 
+.compromisso-social {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #333; 
+}
+
+.texto-container {
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.compromisso-social h2 {
+    color: #a6cffa; 
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.compromisso-social p {
+    color: #ddd;
+    font-style: italic; 
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+.busca-emergencia {
+    background: linear-gradient(135deg, #5484b7 0%, #597eab 100%); 
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #007bff; 
+}
+
+.container-busca {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-busca h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.container-busca p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+/* barra de pesquisa */
+.search-wrapper {
+    display: flex;
+    background: #fff;
+    padding: 8px;
+    border-radius: 50px; /* para ficar arrendondadinha, estilo google  */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 0 auto 15px;
+    transition: transform 0.3s ease;
+}
+
+.search-wrapper:focus-within {
+    transform: scale(1.02); /* efeito ao clicar  */
+}
+
+/* texto */
+#cidadeBusca {
+    flex: 1;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px 0 0 50px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+}
+
+/* busca */
+.btn-localizar {
+    background-color: #057cfa;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-localizar:hover {
+    background-color: #7cb4f0;
+}
+
+/* legenda pequena */
+small {
+    display: block;
+    color: #d8fec9;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .search-wrapper {
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        gap: 10px;
+    }
+    
+    #cidadeBusca {
+        border-radius: 50px;
+        width: 100%;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .btn-localizar {
+        border-radius: 50px;
+        padding: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+}
+.topolinhatempo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8); /* Degradê suave */
+}
+
+.topolinhatempo p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 300; 
+    color: #2c3e50;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    position: relative;
+}
+
+.topolinhatempo p strong {
+    color: #3498db; 
+    font-weight: 800;
+    padding: 0 10px;
+}
+
+/* linha fininha para layout*/
+.topolinhatempo::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #3498db;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+/* para o map */
+#mapaContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#mapaIframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
 }
