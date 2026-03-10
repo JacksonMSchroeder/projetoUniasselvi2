@@ -378,3 +378,46 @@ small {
     height: 450px;
     border: 0;
 }
+/* para mitos e verdades acima do footer */ 
+.mitos-verdades {
+    padding: 60px 20px;
+    background-color: #f0f4f8; 
+}
+
+.container-grid-mitos {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.card-mito {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    border-top: 5px solid #3498db;
+}
+
+.card-mito:hover {
+    transform: translateY(-5px);
+}
+
+.header-card {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 15px 0 5px 0;
+}
+
+.header-card.mito { color: #d9534f; }
+.header-card.verdade { color: #28a745; margin-top: 20px; }
+
+.card-mito p {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
