@@ -11,7 +11,9 @@ Este portal foi desenvolvido como parte das atividades extensionistas do curso d
 
 * **Geolocalização Customizada:** Implementei uma busca dinâmica utilizando iframes do Google Maps. Isso permitiu oferecer um recurso de localização em tempo real para o usuário sem a necessidade de custos com API Keys, mantendo a viabilidade do projeto.
 
-Arquitetura: Organização limpa separando as responsabilidades entre HTML, CSS e a lógica de servidor/scripts.
+* **Arquitetura:** Organização limpa separando as responsabilidades entre HTML, CSS e a lógica de servidor/scripts.
+
+* **Reponsividade Mobile/Desktop:** Acesso pode ser feito via mobile ou computado. 
 
 # Diário de Bordo & Decisões de Design
 O Dilema do Desenvolvedor: Estética vs. Utilidade
@@ -37,3 +39,40 @@ Aprendizado: Implementei o hábito de sempre verificar o status do repositório 
  ### Acadêmico: 
  Jackson Miranda Schroeder Análise e Desenvolvimento de Sistemas – Uniasselvi 2026
  * **Parceiria com instituição:** Á Procura. 
+
+ # Referências e Links Oficiais
+Entendi perfeitamente, Jackson! Você quer os links "crus" e completos (com o protocolo HTTPS) logo ao lado do nome do órgão, sem o texto clicável escondendo a URL. Isso é ótimo para documentação técnica.
+
+Aqui está o bloco formatado para o seu README.md no VS Code:
+
+# Referências e Links Oficiais
+
+# Legislação e Órgãos Governamentais:
+Estatuto da Criança e do Adolescente (ECA): https://www.planalto.gov.br/ccivil_03/leis/L8069compilado.htm
+
+Ministério do Desenvolvimento e Assistência Social: https://www.gov.br/mds/pt-br
+
+Disque 100 (Ouvidoria Nacional): https://www.gov.br/mdh/pt-br/ondh/
+
+CONANDA (Resoluções Técnicas): https://www.gov.br/mdh/pt-br/acesso-a-informacao/participacao-social/conselho-nacional-dos-direitos-da-crianca-e-do-adolescente-conanda/resolucoes/resolucoes-1-a-99.pdf
+
+# Linha do Tempo dos Direitos (Fontes de Pesquisa):
+1927 (Código de Menores): https://mapa.an.gov.br/index.php/dicionario-primeira-republica/1165-legislacao-sobre-menores-na-primeira-republica
+
+1959 (Declaração ONU): https://www.sinesp.org.br/quem-somos/legis/370-declaracao-universal-dos-direitos-da-crianca/1919-declaracao-dos-direitos-da-crianca-1959
+
+1988 (Constituição Federal): https://prioridadeabsoluta.org.br/entenda-a-prioridade/
+
+1990 (Histórico ECA): https://www.childhood.org.br/acoes-e-iniciativas/conselho-tutelar/
+
+2012 (Eleição Unificada): https://mppr.mp.br/Pagina/Eleicoes-Unificadas-para-os-Conselhos-Tutelares
+
+2014 (Lei Menino Bernardo): https://www.jusbrasil.com.br/artigos/lei-menino-bernardo/925423099
+
+2015 (Marco Legal): https://andi.org.br/2015/01/marco-legal-da-primeira-infancia-e-um-passo-importante-para-o-avanco-nas-politicas-publicas-de-protecao-a-crianca/
+
+2022 (Lei Henry Borel): https://revistaft.com.br/o-enfrentamento-da-violencia-contra-a-crianca-e-o-adolescente-apos-a-lei-n-14-344-2022-lei-henry-borel/
+
+2024 (Saúde Mental): https://cj.estrategia.com/portal/alteracao-eca-atendimento-psicossocial/
+
+2026 (SaferNet Digital): https://new.safernet.org.br/content/dia-da-internet-segura-2026-edicao-brasileira-discute-eca-digital-verificacao-etaria-online
