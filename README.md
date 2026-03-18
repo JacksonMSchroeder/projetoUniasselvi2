@@ -4,7 +4,7 @@ Este portal foi desenvolvido como parte das atividades extensionistas do curso d
 
 🔗 Deploy oficial: https://projeto-uniasselvi2.vercel.app
 
-![Demonstração do Site](assets/projetin2.gif)
+![Demonstração do Site](assets/projetinDOIS.gif)
 
 # Tecnologias e Descobertas
 * **Swiper.js:** Utilizado para criar a linha do tempo horizontal. Escolhi essa biblioteca por ser mais performática e oferecer uma experiência de "scroll" mais natural em dispositivos móveis do que modelos de balões verticais.
