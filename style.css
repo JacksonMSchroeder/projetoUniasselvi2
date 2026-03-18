@@ -3,6 +3,20 @@
         padding: 0;
         box-sizing: border-box; 
     }
+   .hero-section {
+    background-color: #FFD400;
+    margin: 0;
+    padding: 0; /* controla o espaço interno */
+}
+
+/* problemas com margens */
+.hero-section h1, 
+.hero-section p, 
+.hero-section div {
+    margin: 0;
+    padding: 10px 0; 
+}
+    
 
 .logo-img {
     display: block;      
@@ -34,7 +48,7 @@
         border: 2px solid #FFD400; 
     }
     main {
-        background-color: #f9f9f9;
+        background-color: #FFD400;
         color: white;
         min-height: 400px;         
         padding: 40px;
@@ -48,6 +62,24 @@
         background-color: #000000;
         color: white;
     }
+    .budie {
+    text-decoration: none; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+.budie:hover {
+    transform: translateY(-5px);
+}
+
+.thankU {
+    font-weight: bold;
+    color: #000; /* para o texto n mudar e ficar forte */
+}
 
     .linha-do-tempo {
     padding: 50px 0;
@@ -198,9 +230,44 @@
 
 .btn-acesso:hover {
     background-color: #007bff;
-    color: #fff;
+    color: #fff
+
+}    /* para o agradecimento */
+.container-agradecimento {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 15px;
+    
 }
-/* texto abaixo dos cards */ 
+
+.agradecimento {
+    /* Tamanho da Imagem */
+    width: 100px;
+    height: 100px;
+    
+    /* para fazer a imagem em circulo */
+    object-fit: cover;
+    border-radius: 50%; /* redondo */
+    border: 3px solid #7159c1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+    /* para subir umn pouco ao passar o mouse/passar o dedo */
+    transition: transform 0.3s ease;
+}
+
+.agradecimento:hover {
+    transform: scale(1.1);
+}
+
+.thankU {
+    /* Estilo do Texto */
+    font-weight: bold;
+    color: #000;
+}
+
 .compromisso-social {
     background-color: #1a1a1a;
     padding: 40px 20px;
@@ -439,7 +506,7 @@ small {
     box-sizing: border-box;
     gap: 20px;
     margin-bottom: 30px;
-    flex-wrap: wrap; /*  não quebrar no mobile */
+    flex-wrap: wrap; 
 }
 
 .btn-emergencia {
