@@ -41,9 +41,6 @@ Aprendizado: Implementei o hábito de sempre verificar o status do repositório 
  * **Parceiria com instituição:** Á Procura. 
 
  # Referências e Links Oficiais
-Entendi perfeitamente, Jackson! Você quer os links "crus" e completos (com o protocolo HTTPS) logo ao lado do nome do órgão, sem o texto clicável escondendo a URL. Isso é ótimo para documentação técnica.
-
-Aqui está o bloco formatado para o seu README.md no VS Code:
 
 # Referências e Links Oficiais
 
