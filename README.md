@@ -38,9 +38,8 @@ Aprendizado: Implementei o hábito de sempre verificar o status do repositório 
 
  ### Acadêmico: 
  Jackson Miranda Schroeder Análise e Desenvolvimento de Sistemas – Uniasselvi 2026
- * **Parceiria com instituição:** Á Procura. 
 
- # Referências e Links Oficiais
+ * **Parceiria com instituição:** Búdie Barbearia, BR, Joinville,SC - Guanabara 
 
 # Referências e Links Oficiais
 
